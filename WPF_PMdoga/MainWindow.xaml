@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_PMdoga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PMdoga"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="MyDg"/>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <Button x:Name="szakaszok_szama" Content="szakaszok száma" Margin="10px" Click="szakaszok_szama_Click"/>
+            <TextBox x:Name="tbido" Margin="5" Width="100px"/>
+            <Label x:Name="lbszurtek"/>
+            <Button x:Name="teljesitheto" Content="idő alatt teljesíthető" Margin="10px" Click="teljesitheto_Click"/>
+            <Button x:Name="pilis" Content="pilis" Margin="10px" Click="pilis_Click"/>
+            <Button x:Name="reset" Content="reset" Margin="10px" Click="reset_Click"/>
+            <Button x:Name="lehosszabb" Content="leghosszabb" Margin="10px" Click="lehosszabb_Click"/>
+            <Button x:Name="mentes" Content="mentés" Margin="10px" Click="mentes_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
